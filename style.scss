@@ -6,7 +6,7 @@ $border-container-style: solid 2px #AF96BC;
 $bg-container-style: linear-gradient(37deg, rgba(15,20,33,1) 0%, rgba(48,35,57,1) 50%, rgba(75,47,77,1) 100%);
 $text-color-footer-primary: white;
 $text-color-footer-secondary: rgba(255,255,255,0.5);
-
+$bg-card: rgba(41, 45, 50, 0.65);
 $text-family-footer: "Inter", system-ui;
 $text-family-body: "Plus Jakarta Sans";
 $text-weight-titles: 800;
@@ -23,6 +23,7 @@ $text-weight-paragraphs: 400;
 body{
       background-color: $background-color;
       font-family: $text-family-body;
+      padding: 0 2rem;
 }
 
 
@@ -84,4 +85,57 @@ body{
 
 .navbar-toggler-icon{
       background-image: url(./assets/toggleIcon.png);
+}
+
+.container-feedbacks{
+      border:$border-container-style;
+      background: $bg-container-style;
+      color: $text-color-primary;
+      margin-top: 10rem;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1rem;
+}
+
+.container-feedbacks h1{
+      margin: 1rem 0;
+      font-weight: $text-weight-subtitles;
+
+}
+
+.carousel-inner {
+      max-width: 70%;
+      margin: 0 auto;
+}
+
+.item{
+      display:flex;
+      flex-direction: column;
+      gap: 4rem;
+}
+
+.card-container{
+      border: $border-container-style;
+      border-radius: 2rem;
+      padding: 2rem;
+      background-color: $bg-card;
+}
+
+.card-title{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+}
+
+.avatar{
+      width: 5rem;
+      height: 5rem;
+      border-radius: 10rem;
+      object-fit: cover;
+      margin-right: 5%;
 }
