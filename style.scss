@@ -1,0 +1,87 @@
+$background-color: black;
+$icon-color: #F38BDC;
+$text-color-primary: #F38BDC;
+$text-color-secondary: #7C37AB;
+$border-container-style: solid 2px #AF96BC;
+$bg-container-style: linear-gradient(37deg, rgba(15,20,33,1) 0%, rgba(48,35,57,1) 50%, rgba(75,47,77,1) 100%);
+$text-color-footer-primary: white;
+$text-color-footer-secondary: rgba(255,255,255,0.5);
+
+$text-family-footer: "Inter", system-ui;
+$text-family-body: "Plus Jakarta Sans";
+$text-weight-titles: 800;
+$text-weight-subtitles: 600;
+$text-weight-paragraphs: 400;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+      margin: 0;
+      padding: 0;
+}
+
+body{
+      background-color: $background-color;
+      font-family: $text-family-body;
+}
+
+
+.navbar {
+      background-color: black !important; 
+      padding: 1rem;
+      transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+      background-color: rgba(0, 0, 0, 0.3) !important;
+      backdrop-filter: blur(3px);
+  }
+  
+
+.container-fluid{
+      justify-content: space-around !important;
+}
+
+.navbar-brand{
+      padding: 0;
+      margin: 0;
+}
+.navbar-brand img{
+      max-width: 3rem;
+}
+
+.collapse{
+      flex-grow: 0;
+}
+
+.navbar-nav{
+      margin-right: 0 !important;
+}
+
+.nav-item{
+      padding: 0 1rem;
+}
+
+.nav-link{
+      color: $text-color-primary;
+      font-weight: $text-weight-subtitles;
+}
+.nav-link:hover{
+      color: $text-color-secondary !important;
+}
+
+.nav-link:visited{
+      color: $text-color-primary;
+}
+
+.nav-link.active{
+      color: $text-color-secondary !important;
+}
+
+.navbar-toggler{
+      border: solid 1px #F38BDC;
+}
+
+.navbar-toggler-icon{
+      background-image: url(./assets/toggleIcon.png);
+}
