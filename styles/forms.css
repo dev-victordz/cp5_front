@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.formsection {
+  background-color: black;
+  background-image: url("../imgs/pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding-bottom: 100px;
+}
+
+.img_form {
+  width: 220px;
+  padding-top: 111px;
+}
+.img_form img {
+  width: 100%;
+}
+
+.form-div {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 466px;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.09);
+  border: solid 2;
+  border-color: #F38BDC;
+  font-size: 15px;
+  height: 55px;
+}
+
+.text_area {
+  border-radius: 30px;
+  height: 290px;
+}
+
+.btn {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.09);
+  border: solid 2;
+  border-color: #F38BDC;
+  font-size: 15px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: #F38BDC;
+}
+.btn img {
+  width: 51px;
+}
+
+.botao :hover {
+  background-color: rgba(255, 255, 255, 0.11);
+  color: #F38BDC;
+}
+
+@media screen and (min-width: 744px) {
+  .img_form {
+    width: 590px;
+  }
+  .form_div, .form-control, .botao {
+    width: 638px;
+  }
+  .formulario {
+    display: flex;
+    align-items: center;
+  }
+}/*# sourceMappingURL=forms.css.map */
