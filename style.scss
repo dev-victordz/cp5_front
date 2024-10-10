@@ -179,261 +179,266 @@ h2 {
 }
 
 // Seção Funcionalidades
+
 .funcionalidades {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; 
+  align-items: center; 
   padding: 1rem 0;
   background-color: $background-color;
 }
 
 .funcionalidades-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
   text-align: center;
   color: $text-color-primary;
-  margin: 2rem;
-  width: 20%;
+  margin: 2rem; 
+  width: 20%; 
+}
+
+.funcionalidade-img {
+  width: 13rem;
+  height: auto;
+}
+
+.funcionalidades-items p {
+  font-size: 2rem;
+  font-weight: $text-weight-titles;
+  font-family: $text-family-body;
+  margin-top: 1rem; 
+}
+
+// Estilo para iPad Mini //
+
+@media screen and (min-width:744px) {
+  .sobre-nos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-color;
+    color: $text-color-primary;
+    padding: 4rem 2rem;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $text-color-primary;
+    margin: auto;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .rectangle {
+    width: 95%;
+    height: 140vh;
+    margin: 1rem;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #0F1421, #302339, #4B2F4D);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #AF96BC;
+  }
+
+  .sobre-nos-image {
+    display: block;
+    margin: 2rem auto 0 6rem;
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .sobre-nos-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin: 6rem auto 0 6rem;
+    width: 65%;
+    height: 7rem;
+    border: 2px solid $text-color-primary;
+    border-radius: 32px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $text-color-primary;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .icon-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: $text-color-primary;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .icon {
+      width: 10rem;
+      height: auto;
+    }
+  }
+
+  // Seção Funcionalidades
+
+  .funcionalidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 0;
+    background-color: $background-color;
+  }
+
+  .funcionalidades-items {
+    text-align: center;
+    color: $text-color-primary;
+  }
 
   .funcionalidade-img {
     width: 13rem;
     height: auto;
+    margin-top: 1rem;
   }
 
   .funcionalidades-items p {
     font-size: 2rem;
     font-weight: $text-weight-titles;
     font-family: $text-family-body;
+  }
+}
+
+// Estilo para DESKTOP //
+
+@media screen and (min-width: 1080px) {
+  .sobre-nos {
+    display: flex;
+    background-color: $background-color;
+    color: $text-color-primary;
+    padding: 4rem 2rem;
+    text-align: start;
+    min-height: 100vh;
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 5rem;
+    color: $text-color-primary;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .rectangle {
+    width: 95%;
+    height: 100vh;
+    margin: 1rem;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #0F1421, #302339, #4B2F4D);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #AF96BC;
+  }
+
+  .sobre-nos-image {
+    display: block;
+    margin: 0 auto 0 6rem;
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .sobre-nos-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin: 6rem auto 0 6rem;
+    width: 65%;
+    height: 7rem;
+    border: 2px solid $text-color-primary;
+    border-radius: 32px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $text-color-primary;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .icon-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: $text-color-primary;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .icon {
+      width: 10rem;
+      height: auto;
+    }
+  }
+
+  // Seção Funcionalidades
+  
+  .funcionalidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 0;
+    background-color: $background-color;
+  }
+
+  .funcionalidades-items {
+    text-align: center;
+    color: $text-color-primary;
+  }
+
+  .funcionalidade-img {
+    width: 20rem;
+    height: auto;
     margin-top: 1rem;
+  }
 
-    // Estilo para iPad Mini //
+  .funcionalidades-items p {
+    font-size: 2rem;
+    font-weight: $text-weight-titles;
+    font-family: $text-family-body;
+  }
+}
 
-    @media screen and (min-width:744px) {
-      .sobre-nos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: $background-color;
-        color: $text-color-primary;
-        padding: 4rem 2rem;
-        text-align: center;
-        min-height: 100vh;
-      }
-
-      h2 {
-        font-size: 3rem;
-        font-weight: bold;
-        color: $text-color-primary;
-        margin: auto;
-        font-family: 'Plus Jakarta Sans', sans-serif;
-      }
-
-      .rectangle {
-        width: 95%;
-        height: 140vh;
-        margin: 1rem;
-        border-radius: 24px;
-        background: linear-gradient(135deg, #0F1421, #302339, #4B2F4D);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        border: 2px solid #AF96BC;
-      }
-
-      .sobre-nos-image {
-        display: block;
-        margin: 2rem auto 0 6rem;
-        width: 60%;
-        max-width: 100%;
-        height: auto;
-      }
-
-      .sobre-nos-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: transparent;
-        margin: 6rem auto 0 6rem;
-        width: 65%;
-        height: 7rem;
-        border: 2px solid $text-color-primary;
-        border-radius: 32px;
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: $text-color-primary;
-      }
-
-      .content-container {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        align-items: flex-start;
-        justify-content: space-between;
-
-        .icon-container {
-          display: flex;
-          flex-direction: column;
-        }
-
-        .icon-item {
-          display: flex;
-          align-items: center;
-          margin-bottom: 1px;
-          font-size: 2rem;
-          font-weight: bold;
-          color: $text-color-primary;
-          font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-
-        .icon {
-          width: 10rem;
-          height: auto;
-        }
-      }
-
-      // Seção Funcionalidades
-
-      .funcionalidades {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 4rem 0;
-        background-color: $background-color;
-      }
-
-      .funcionalidades-items {
-        text-align: center;
-        color: $text-color-primary;
-      }
-
-      .funcionalidade-img {
-        width: 13rem;
-        height: auto;
-        margin-top: 1rem;
-      }
-
-      .funcionalidades-items p {
-        font-size: 2rem;
-        font-weight: $text-weight-titles;
-        font-family: $text-family-body;
-      }
-    }
-
-    // Estilo para DESKTOP //
-
-    @media screen and (min-width: 1080px) {
-      .sobre-nos {
-        display: flex;
-        background-color: $background-color;
-        color: $text-color-primary;
-        padding: 4rem 2rem;
-        text-align: start;
-        min-height: 100vh;
-      }
-
-      h2 {
-        font-size: 4rem;
-        font-weight: bold;
-        margin: 5rem;
-        color: $text-color-primary;
-        font-family: 'Plus Jakarta Sans', sans-serif;
-      }
-
-      .rectangle {
-        width: 95%;
-        height: 100vh;
-        margin: 1rem;
-        border-radius: 24px;
-        background: linear-gradient(135deg, #0F1421, #302339, #4B2F4D);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        border: 2px solid #AF96BC;
-      }
-
-      .sobre-nos-image {
-        display: block;
-        margin: 0 auto 0 6rem;
-        width: 70%;
-        max-width: 100%;
-        height: auto;
-      }
-
-      .sobre-nos-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: transparent;
-        margin: 6rem auto 0 6rem;
-        width: 65%;
-        height: 7rem;
-        border: 2px solid $text-color-primary;
-        border-radius: 32px;
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: $text-color-primary;
-      }
-
-      .content-container {
-        display: flex;
-        flex-direction: row;
-        text-align: left;
-        align-items: flex-start;
-        justify-content: space-between;
-
-        .icon-container {
-          display: flex;
-          flex-direction: column;
-        }
-
-        .icon-item {
-          display: flex;
-          align-items: center;
-          margin-bottom: 1px;
-          font-size: 2rem;
-          font-weight: bold;
-          color: $text-color-primary;
-          font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-
-        .icon {
-          width: 10rem;
-          height: auto;
-        }
-      }
-
-      // Seção Funcionalidades
-      .funcionalidades {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 4rem 0;
-        background-color: $background-color;
-      }
-
-      .funcionalidades-items {
-        text-align: center;
-        color: $text-color-primary;
-      }
-
-      .funcionalidade-img {
-        width: 20rem;
-        height: auto;
-        margin-top: 1rem;
-      }
-
-      .funcionalidades-items p {
-        font-size: 2rem;
-        font-weight: $text-weight-titles;
-        font-family: $text-family-body;
-      }
-    }
