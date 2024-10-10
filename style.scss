@@ -3,9 +3,9 @@ $icon-color: #F38BDC;
 $text-color-primary: #F38BDC;
 $text-color-secondary: #7C37AB;
 $border-container-style: solid 2px #AF96BC;
-$bg-container-style: linear-gradient(37deg, rgba(15,20,33,1) 0%, rgba(48,35,57,1) 50%, rgba(75,47,77,1) 100%);
+$bg-container-style: linear-gradient(37deg, rgba(15, 20, 33, 1) 0%, rgba(48, 35, 57, 1) 50%, rgba(75, 47, 77, 1) 100%);
 $text-color-footer-primary: white;
-$text-color-footer-secondary: rgba(255,255,255,0.5);
+$text-color-footer-secondary: rgba(255, 255, 255, 0.5);
 
 $text-family-footer: "Inter", system-ui;
 $text-family-body: "Plus Jakarta Sans";
@@ -15,113 +15,172 @@ $text-weight-paragraphs: 400;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-*{
+* {
       margin: 0;
       padding: 0;
 }
 
-body{
+body {
       background-color: $background-color;
       font-family: $text-family-body;
 }
 
 
 .navbar {
-      background-color: black !important; 
+      background-color: black !important;
       padding: 1rem;
       transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-  }
-  
-  .navbar.scrolled {
+}
+
+.navbar.scrolled {
       background-color: rgba(0, 0, 0, 0.3) !important;
       backdrop-filter: blur(3px);
-  }
-  
+}
 
-.container-fluid{
+
+.container-fluid {
       justify-content: space-around !important;
 }
 
-.navbar-brand{
+.navbar-brand {
       padding: 0;
       margin: 0;
 }
-.navbar-brand img{
+
+.navbar-brand img {
       max-width: 3rem;
 }
 
-.collapse{
+.collapse {
       flex-grow: 0;
 }
 
-.navbar-nav{
+.navbar-nav {
       margin-right: 0 !important;
 }
 
-.nav-item{
+.nav-item {
       padding: 0 1rem;
 }
 
-.nav-link{
+.nav-link {
       color: $text-color-primary;
       font-weight: $text-weight-subtitles;
 }
-.nav-link:hover{
+
+.nav-link:hover {
       color: $text-color-secondary !important;
 }
 
-.nav-link:visited{
+.nav-link:visited {
       color: $text-color-primary;
 }
 
-.nav-link.active{
+.nav-link.active {
       color: $text-color-secondary !important;
 }
 
-.navbar-toggler{
+.navbar-toggler {
       border: solid 1px #F38BDC;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
       background-image: url(./assets/toggleIcon.png);
 }
 
 
 //Sobre Nós
 
-html, body {
-    background-color: $background-color;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Tira a rolagem */
+html,
+body {
+      background-color: $background-color;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /* Tira a rolagem */
 }
 
 .sobre-nos {
-    background-color: $background-color;
-    color: $text-color-primary;
-    padding: 4rem 2rem;
-    text-align: left;
-    min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $background-color;
+      color: $text-color-primary;
+      padding: 4rem 2rem;
+      text-align: left;
+      min-height: 100vh;
+}
 
-    h2 {
-        font-size: 2.5rem;
-        color: $text-color-primary;
-        margin-top: 4rem;
-        margin-left: 4rem;
-        font-family: 'Plus Jakarta Sans', sans-serif;
-    }
+h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: $text-color-primary;
+      margin-top: 4rem;
+      margin-left: 4rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+}
 
-    .rectangle {
-        width: 95%; 
-        height: 90vh; 
-        margin: 1rem;
-        border-radius: 24px; 
-        background: linear-gradient(135deg, #0F1421, #302339, #4B2F4D); 
-        display: flex;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
-        border: 1px solid #AF96BC;
-    }
+.rectangle {
+      width: 95%;
+      height: 90vh;
+      margin: 1rem;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #0F1421, #302339, #4B2F4D);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      border: 1px solid #AF96BC;
+}
 
+.sobre-nos-image {
+      display: block;
+      margin: 2rem auto 0 6rem;
+      width: 60%;
+      max-width: 100%;
+      height: auto;
+}
+
+.sobre-nos-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      margin: 6rem auto 0 6rem;
+      width: 65%;
+      height: 7rem;
+      border: 2px solid $text-color-primary;
+      border-radius: 32px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: $text-color-primary;
+}
+
+.content-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .icon-container {
+            display: flex;
+            flex-direction: column;
+      }
+
+      .icon-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: $text-color-primary;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+
+      .icon {
+            width: 11rem;
+            height: auto;
+      }
 }

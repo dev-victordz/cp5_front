@@ -70,38 +70,95 @@ body {
   background-image: url(./assets/toggleIcon.png);
 }
 
-html, body {
+html,
+body {
   background-color: black;
   font-family: "Plus Jakarta Sans", sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Tira a rolagem */
+  overflow: hidden;
+  /* Tira a rolagem */
 }
 
 .sobre-nos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   color: #F38BDC;
   padding: 4rem 2rem;
   text-align: left;
   min-height: 100vh;
 }
-.sobre-nos h2 {
-  font-size: 2.5rem;
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
   color: #F38BDC;
   margin-top: 4rem;
   margin-left: 4rem;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-.sobre-nos .rectangle {
+
+.rectangle {
   width: 95%;
   height: 90vh;
   margin: 1rem;
   border-radius: 24px;
   background: linear-gradient(135deg, #0F1421, #302339, #4B2F4D);
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   border: 1px solid #AF96BC;
+}
+
+.sobre-nos-image {
+  display: block;
+  margin: 2rem auto 0 6rem;
+  width: 60%;
+  max-width: 100%;
+  height: auto;
+}
+
+.sobre-nos-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  margin: 6rem auto 0 6rem;
+  width: 65%;
+  height: 7rem;
+  border: 2px solid #F38BDC;
+  border-radius: 32px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #F38BDC;
+}
+
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.content-container .icon-container {
+  display: flex;
+  flex-direction: column;
+}
+.content-container .icon-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #F38BDC;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.content-container .icon {
+  width: 11rem;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
