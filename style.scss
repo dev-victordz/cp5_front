@@ -16,6 +16,7 @@ $text-weight-paragraphs: 400;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+/*Estilos Globais*/
 * {
       margin : 0;
       padding: 0;
@@ -29,7 +30,7 @@ p{
       margin-bottom: 0;
 }
 
-
+/*navbar*/
 .navbar {
       background-color: black !important;
       padding         : 1rem;
@@ -92,7 +93,7 @@ p{
       background-image: url(./assets/toggleIcon.png);
 }
 
-
+/*Hero Section*/
 .herosection {
       background-image : url("./assets/pattern.png");
       background-repeat: no-repeat;
@@ -190,8 +191,226 @@ p{
 
 }
 
+
+/*Form*/
+
+.formsection {
+      background-color: $background-color;
+      background-image : url("./assets/pattern.png");
+      background-repeat: no-repeat;
+      background-size  : cover;
+      background-position: center;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      padding-bottom: 100px;
+  }
+  
+  .img_form {
+      img {
+          width: 70vw;
+      }
+  }
+  
+  .form-div {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      height: 466px;
+  }
+  
+  .form-control {
+      background-color: rgba(255, 255, 255, 9%);
+      border: solid 2px;
+      border-color: $icon-color;
+      font-size: 15px;
+      height: 55px;
+      
+  }
+  
+  .text_area {
+      border-radius: 30px;
+      height: 290px;
+  }
+
+  #sub_button{
+      width: 100%;
+      background-color: rgba(255, 255, 255, 9%);
+      border: solid 2px;
+      border-color: $icon-color;
+      font-size: 15px;
+      border-radius: 30px;
+      font-size: 18px;
+      color: $text-color-primary;
+      img {
+          width: 51px;
+      }
+      &:hover {
+            background-color: rgba(255, 255, 255, 10%);
+            transition      : 0.1s;
+      }
+  }
+
+/*Footer*/
+
+footer{
+      a{
+            text-decoration: none;
+      }
+}
+.contact {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      h1{
+            color: $text-color-footer-primary;
+            opacity: 50%;
+            font-size: 15px;
+            font-weight: 500;
+      }
+    }
+.container1{
+      img{
+            display: none;
+      }
+}
+.contact_infos {
+      display: flex;
+      justify-content: space-around;
+      padding-right: 20px;
+}
+.contact_conteudo {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      h2{
+            color: $text-color-footer-primary;
+            opacity: 50%;
+            font-size: 10px;
+            font-weight: 500;
+      }
+      p{
+            color: $text-color-footer-primary;
+            font-size: 12px;
+            font-weight: 400;
+      }
+}
+.social {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      h1{
+            color: $text-color-footer-primary;
+            opacity: 50%;
+            font-size: 15px;
+            font-weight: 500;
+      }
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+  i{
+      color: $text-color-primary;
+      font-size: 5vw;
+  }
+}
+.direitos {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding-bottom: 20px;
+}
+.termos {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0 60px 0 60px;
+      p{
+            font-size: 10px;
+            font-weight: 500;
+            color: $text-color-footer-primary;
+      }
+}
+.copy {
+      display: flex;
+      justify-content: center;
+      p{
+            color: white;
+            opacity: 50%;
+            font-size: 10px;   
+      }
+    }
+
+
+/*Media Queries*/
+
+/*Ipad*/
+
+@media screen and (min-width: 770px) {
+
+      /*Form*/
+      .img_form {
+            img{
+                  width: 40vh;
+            }
+            }
+        
+            .form_div, .form-control, .botao {
+                width: 638px;
+            }
+        
+            .formulario {
+                display: flex;
+                align-items: center;
+            }
+
+
+      /*footer*/
+      .container1 {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 45px;
+        align-items: center;
+        img {
+          display: block;
+          width: 50px;
+        }
+      }
+      .contact, .social {
+        padding: 20px 0px;
+      }
+      .contact_infos {
+        padding-right: 0px;
+        gap: 40px;
+      }
+      .icons i{
+        font-size: 3vw;
+      }
+      .direitos {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 45px 20px 45px;
+      }
+      .termos {
+        gap: 100px;
+        padding: 0px;
+        p{
+            opacity: 50%;
+        }
+      }
+    }
+
+
+/*Desktop*/
 @media screen and (min-width: 1080px) {
 
+      /*Hero Section*/
       .herosection {
             flex-direction : row;
             justify-content: space-around;
@@ -245,4 +464,14 @@ p{
                   width: 5vh;
             }
       }
+
+      /*Footer*/ 
+      .icons{
+            i{
+                  font-size: 2.1vw;
+            }
+      }
+      .direitos {
+            justify-content: space-around;
+          }
 }

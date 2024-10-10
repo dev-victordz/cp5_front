@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-
-
-/*estilos globais*/
+/*Estilos Globais*/
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +13,6 @@ body {
 p {
   margin-bottom: 0;
 }
-
 
 /*navbar*/
 .navbar {
@@ -79,8 +76,7 @@ p {
   background-image: url(./assets/toggleIcon.png);
 }
 
-
-/*hero section*/
+/*Hero Section*/
 .herosection {
   background-image: url("./assets/pattern.png");
   background-repeat: no-repeat;
@@ -167,11 +163,69 @@ p {
   width: 10vw;
 }
 
+/*Form*/
+.formsection {
+  background-color: black;
+  background-image: url("./assets/pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding-bottom: 100px;
+}
 
-/*footer*/
-footer a{
+.img_form img {
+  width: 70vw;
+}
+
+.form-div {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 466px;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.09);
+  border: solid 2px;
+  border-color: #F38BDC;
+  font-size: 15px;
+  height: 55px;
+}
+
+.text_area {
+  border-radius: 30px;
+  height: 290px;
+}
+
+#sub_button {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.09);
+  border: solid 2px;
+  border-color: #F38BDC;
+  font-size: 15px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: #F38BDC;
+}
+#sub_button img {
+  width: 51px;
+}
+#sub_button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.1s;
+}
+
+/*Footer*/
+footer a {
   text-decoration: none;
 }
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -263,21 +317,30 @@ footer a{
   font-size: 10px;
 }
 
-/*mediaqueries*/
-
-
-/*ipad*/
+/*Media Queries*/
+/*Ipad*/
 @media screen and (min-width: 770px) {
+  /*Form*/
+  .img_form img {
+    width: 40vh;
+  }
+  .form_div, .form-control, .botao {
+    width: 638px;
+  }
+  .formulario {
+    display: flex;
+    align-items: center;
+  }
   /*footer*/
   .container1 {
     display: flex;
     justify-content: space-around;
     padding: 0 45px;
     align-items: center;
-    img {
-      display: block;
-      width: 50px;
-    }
+  }
+  .container1 img {
+    display: block;
+    width: 50px;
   }
   .contact, .social {
     padding: 20px 0px;
@@ -286,7 +349,7 @@ footer a{
     padding-right: 0px;
     gap: 40px;
   }
-  .icons i{
+  .icons i {
     font-size: 3vw;
   }
   .direitos {
@@ -303,12 +366,9 @@ footer a{
     opacity: 50%;
   }
 }
-
-
-/*desktop*/
+/*Desktop*/
 @media screen and (min-width: 1080px) {
-
-  /*hero section*/
+  /*Hero Section*/
   .herosection {
     flex-direction: row;
     justify-content: space-around;
@@ -344,21 +404,13 @@ footer a{
   .btn img {
     width: 5vh;
   }
-
-
-  /*footer*/
-  .icons i{
+  /*Footer*/
+  .icons i {
     font-size: 2.1vw;
   }
   .direitos {
     justify-content: space-around;
   }
 }
-
-
-
-
-
-
 
 /*# sourceMappingURL=style.css.map */
