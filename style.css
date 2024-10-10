@@ -2,11 +2,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: black;
   font-family: "Plus Jakarta Sans";
+  color: #F38BDC;
 }
 
 .navbar {
@@ -77,8 +79,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  /* Tira a rolagem */
 }
 
 .sobre-nos {
@@ -160,5 +160,31 @@ h2 {
   width: 11rem;
   height: auto;
 }
+
+.funcionalidades {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 0;
+  background-color: black;
+}
+
+.funcionalidades-items {
+  text-align: center;
+  color: #F38BDC;
+}
+
+.funcionalidade-img {
+  width: 20rem;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.funcionalidades-items p {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
 
 /*# sourceMappingURL=style.css.map */
