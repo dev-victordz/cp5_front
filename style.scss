@@ -1,17 +1,16 @@
-$background-color           : black;
-$icon-color                 : #F38BDC;
-$text-color-primary         : #F38BDC;
-$text-color-secondary       : #7C37AB;
-$border-container-style     : solid 2px #AF96BC;
-$bg-container-style         : linear-gradient(37deg, rgba(15, 20, 33, 1) 0%, rgba(48, 35, 57, 1) 50%, rgba(75, 47, 77, 1) 100%);
-$text-color-footer-primary  : white;
-$text-color-footer-secondary: rgba(255, 255, 255, 0.5);
-
-$text-family-footer: "Inter",
-system-ui;
-$text-family-body      : "Plus Jakarta Sans";
-$text-weight-titles    : 800;
-$text-weight-subtitles : 600;
+$background-color: black;
+$icon-color: #F38BDC;
+$text-color-primary: #F38BDC;
+$text-color-secondary: #7C37AB;
+$border-container-style: solid 2px #AF96BC;
+$bg-container-style: linear-gradient(37deg, rgba(15,20,33,1) 0%, rgba(48,35,57,1) 50%, rgba(75,47,77,1) 100%);
+$text-color-footer-primary: white;
+$text-color-footer-secondary: rgba(255,255,255,0.5);
+$bg-card: rgba(41, 45, 50, 0.65);
+$text-family-footer: "Inter", system-ui;
+$text-family-body: "Plus Jakarta Sans";
+$text-weight-titles: 800;
+$text-weight-subtitles: 600;
 $text-weight-paragraphs: 400;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
@@ -379,6 +378,49 @@ p {
       }
 }
 
+/*Feedbacks*/
+
+.container-feedbacks{
+      border:$border-container-style;
+      background: $bg-container-style;
+      color: $text-color-primary;
+      padding: 1rem;
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 1rem;
+      gap: 1.5rem;
+      h1{
+            margin: 1rem 0;
+            font-weight: $text-weight-subtitles;
+      
+      }
+}
+
+.card-container{
+      border: $border-container-style;
+      border-radius: 2rem;
+      padding: 2rem;
+      background-color: $bg-card;
+}
+
+.card-title{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+}
+
+.avatar{
+      width: 5rem;
+      height: 5rem;
+      border-radius: 10rem;
+      object-fit: cover;
+      margin-right: 5%;
+}
+
 /*Footer*/
 
 footer {
@@ -673,6 +715,7 @@ footer {
             }
       }
 
+      /*Sobre*/
       .sobre-nos {
             padding: 0;
 
@@ -704,6 +747,11 @@ footer {
             padding        : 0;
       }
 
+      /*Feedbacks*/
+      .container-feedbacks{
+            display: grid;
+            grid-column: auto;
+      }
 
 
       /*Footer*/

@@ -334,6 +334,47 @@ p {
   transition: 0.1s;
 }
 
+/*Feedbacks*/
+.container-feedbacks {
+  border: solid 2px #AF96BC;
+  background: linear-gradient(37deg, rgb(15, 20, 33) 0%, rgb(48, 35, 57) 50%, rgb(75, 47, 77) 100%);
+  color: #F38BDC;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  gap: 1.5rem;
+}
+.container-feedbacks h1 {
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.card-container {
+  border: solid 2px #AF96BC;
+  border-radius: 2rem;
+  padding: 2rem;
+  background-color: rgba(41, 45, 50, 0.65);
+}
+
+.card-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10rem;
+  object-fit: cover;
+  margin-right: 5%;
+}
+
 /*Footer*/
 footer a {
   text-decoration: none;
@@ -565,6 +606,7 @@ footer a {
   .btn img {
     width: 5vh;
   }
+  /*Sobre*/
   .sobre-nos {
     padding: 0;
   }
@@ -589,6 +631,11 @@ footer a {
     align-items: flex-start;
     justify-content: space-between;
     padding: 0;
+  }
+  /*Feedbacks*/
+  .container-feedbacks {
+    display: grid;
+    grid-column: auto;
   }
   /*Footer*/
   .icons i {
