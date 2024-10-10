@@ -87,6 +87,7 @@ p {
   align-items: center;
   gap: 20px;
   padding: 10vh 5vh;
+  margin-top: 30px;
 }
 .herosection p {
   font-weight: 600;
@@ -163,9 +164,121 @@ p {
   width: 10vw;
 }
 
+/*Section Sobre*/
+.sobre-nos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: black;
+  color: #F38BDC;
+  text-align: center;
+}
+.sobre-nos h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #F38BDC;
+  margin: 2rem auto;
+}
+
+.rectangle {
+  margin: 1rem;
+  border-radius: 24px;
+  background: linear-gradient(37deg, rgb(15, 20, 33) 0%, rgb(48, 35, 57) 50%, rgb(75, 47, 77) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #AF96BC;
+}
+
+.sobre-nos-image {
+  display: block;
+  margin: auto;
+  width: 90%;
+  height: auto;
+}
+
+.sobre-nos-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+  margin: 2rem auto;
+  border: 2px solid #F38BDC;
+  width: 60vw;
+  height: 12vw;
+  border-radius: 30vw;
+  font-size: 5vw;
+  font-weight: 600;
+  color: #F38BDC;
+}
+.sobre-nos-button img {
+  width: 9vw;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.content-container .icon-container {
+  display: flex;
+  flex-direction: column;
+}
+.content-container .icon-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #F38BDC;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.content-container .icon-item p {
+  margin-bottom: 1.6rem;
+}
+
+.funcionalidades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  background-image: url("./assets/pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.funcionalidades-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #F38BDC;
+  margin: 2rem;
+}
+
+.title-func {
+  margin-bottom: 1rem;
+}
+
+.funcionalidade-img {
+  width: 13rem;
+  height: auto;
+}
+
+.funcionalidades-items p {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: "Plus Jakarta Sans";
+  margin-top: 1rem;
+}
+
 /*Form*/
 .formsection {
-  background-color: black;
   background-image: url("./assets/pattern.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -320,11 +433,58 @@ footer a {
 /*Media Queries*/
 /*Ipad*/
 @media screen and (min-width: 770px) {
+  /*Sobre nos*/
+  .sobre-nos {
+    padding: 4rem 2rem;
+  }
+  .sobre-nos h2 {
+    font-size: 3rem;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .content-container .icon-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-container .icon-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #F38BDC;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  .content-container .icon {
+    width: 10rem;
+    height: auto;
+  }
+  /*Fucionalidades*/
+  .funcionalidades {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .funcionalidades-items {
+    margin: 0;
+  }
+  .funcionalidades-items .title-func {
+    padding: 20px;
+  }
+  .funcionalidade-img {
+    margin-top: 1rem;
+  }
   /*Form*/
   .img_form img {
     width: 40vh;
   }
-  .form_div, .form-control, .botao {
+  .form_div,
+  .form-control,
+  .botao {
     width: 638px;
   }
   .formulario {
@@ -342,7 +502,8 @@ footer a {
     display: block;
     width: 50px;
   }
-  .contact, .social {
+  .contact,
+  .social {
     padding: 20px 0px;
   }
   .contact_infos {
@@ -403,6 +564,31 @@ footer a {
   }
   .btn img {
     width: 5vh;
+  }
+  .sobre-nos {
+    padding: 0;
+  }
+  .sobre-nos h2 {
+    font-size: 4rem;
+  }
+  .rectangle {
+    padding: 2rem;
+  }
+  .sobre-nos-button {
+    width: 65%;
+    height: 7rem;
+    font-size: 3vw;
+  }
+  .sobre-nos-button img {
+    width: 4vw;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
   }
   /*Footer*/
   .icons i {
